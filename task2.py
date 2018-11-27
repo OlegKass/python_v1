@@ -3,10 +3,7 @@ from data import dataset
 
 #    Створити пакет validators та написати функції, що валідують усі дані. Імпорутвати дані функції.
 
-from validators.lib import ?
-?
-?
-
+from validators.lib import *
 
 from task1 import addUserDish
 
@@ -16,18 +13,16 @@ from task1 import addUserDish
 
 def addUserDishValidator():
     #TODO
-    ? = getUserPassport()
+    number_of_pasport = getUserPassport()
 
 
-    ? = getCountryName()
+    name_of_country = getCountryName()
 
-    ? = getDishName()
+    name_of_dish = getDishName()
 
-    addUserDish(?, ?, ?)
+    addUserDish(number_of_pasport, name_of_country, name_of_dish)
 
-
-
-print("Task 1")
+print("Task 2")
 addUserDishValidator()
 print(dataset)
 

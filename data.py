@@ -17,7 +17,11 @@
 
 
 dataset = \
-{
+{"number_of_pasport":
+     {"country_1":
+          {"food_1","food_2"}
+
+     }
 
 
 }

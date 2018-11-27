@@ -1,19 +1,16 @@
 
-"""
-    Написати валідатор ....
-    Правило валідації
-"""
 
 import re
 
 def getUserPassport():
 
-    user_input = input(?)
+    user_input = input("Enter number_of_pasport ")
 
-    if (re.match(r"?", user_input) ):
+    if (re.match(r"^[A-Z]{2}[0-9]{6}$", user_input) ):
         return user_input
     else:
-        return False
+        print("Enter correct infirmation")
+        return getUserPassport()
 
 
 """
@@ -22,10 +19,13 @@ def getUserPassport():
 """
 
 def getCountryName():
-    #TODO
+    user_input = input("Enter country name ")
 
-
-
+    if (re.match(r"^[A-Z]{1}[a-z]{1,9}$", user_input) ):
+        return user_input
+    else:
+        print("Enter correct infirmation" )
+        return getCountryName()
 """
     Написати валідатор ....
     Правило валідації
@@ -33,4 +33,11 @@ def getCountryName():
 
 
 def getDishName():
-    #TODO
+    user_input = input("Enter food name ")
+
+    if (re.match(r"^[A-Z]{1}[a-z]{1,9}$", user_input) ):
+        return user_input
+    else:
+        print("Enter correct infirmation")
+        return getDishName()
+
